@@ -2,7 +2,7 @@
 
 Página web para o Food Truck "Dev Burguer" - desenvolvida como atividade prática de HTML5 semântico.
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 Um Food Truck de hambúrgueres artesanais com nomes de programadores (ex: "Hamburgão em C++", "Class Burger", "React Veggie").
 
@@ -10,7 +10,7 @@ Um Food Truck de hambúrgueres artesanais com nomes de programadores (ex: "Hambu
 
 ---
 
-## 📑 Conteúdo da Página
+## Conteúdo da Página
 
 ### Seções Obrigatórias
 
@@ -39,7 +39,7 @@ Um Food Truck de hambúrgueres artesanais com nomes de programadores (ex: "Hambu
 
 ---
 
-## 🛠️ Requisitos Técnicos
+## Requisitos Técnicos
 
 ### Tags HTML5 Semânticas
 - `<header>` - Cabeçalho da página
@@ -62,7 +62,7 @@ Um Food Truck de hambúrgueres artesanais com nomes de programadores (ex: "Hambu
 
 ---
 
-## 📝 Instruções de Desenvolvimento
+## Instruções de Desenvolvimento
 
 ### 1. Esboço
 Desenhe no papel a estrutura (header, nav, main, footer) e identifique qual tag HTML5 será usada em cada bloco.
@@ -82,7 +82,7 @@ Teste no navegador:
 
 ---
 
-## 🎤 Preparação para Apresentação
+## Preparação para Apresentação
 
 Você pode ser sorteado para apresentar o projeto!
 
