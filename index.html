@@ -16,6 +16,7 @@
     <nav>
       <ul>
         <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#pedido">Pedido</a></li>
         <li><a href="#horario">Horário de Funcionamento</a></li>
         <li><a href="#localizacao">Localização</a></li>
       </ul>
@@ -54,6 +55,70 @@
             "Rua das Linguagens, 404 - Centro".
           </a>
         </address>
+      </section>
+
+      <!--* Faça seu Pedido -->
+      <section id="pedido">
+        <h2>Faça seu Pedido</h2>
+        <form action="processa_pedido.php" method="get">
+          <input
+            type="text"
+            name="cliente"
+            placeholder="Ex: Luis Henrique Santos"
+          />
+          <br /><br />
+
+          <p><strong>Escolha seu hambúrguer</strong></p>
+          <input
+            type="radio"
+            name="hamburguer"
+            id="hamburgaoC++"
+            value="hamburgaoC++"
+          />
+          <label for="hamburgaoC++">Hamburgão em C++ – R$28,00</label><br />
+
+          <input
+            type="radio"
+            name="hamburguer"
+            id="classBurguer"
+            value="classBurguer"
+          />
+          <label for="classBurguer">Class Burger – R$32,00</label><br />
+
+          <input
+            type="radio"
+            name="hamburguer"
+            id="reactVeggie"
+            value="reactVeggie"
+          />
+          <label for="reactVeggie">React Veggie – R$30,00</label><br /><br />
+
+          <p><strong>Adicionais</strong></p>
+          <input type="checkbox" name="adicional" id="bacon" value="bacon" />
+          <label for="bacon">Bacon extra (+ R$5,00)</label><br />
+
+          <input type="checkbox" name="adicional" id="queijo" value="queijo" />
+          <label for="queijo">Queijo extra (+ R$4,00)</label><br />
+
+          <input
+            type="checkbox"
+            name="adicional"
+            id="batataFrita"
+            value="batataFrita"
+          />
+          <label for="batataFrita">Batata frita (+ R$8,00)</label><br /><br />
+
+          <p><strong>Observação:</strong></p>
+          <textarea
+            name="observacao"
+            id="observacao"
+            rows="10"
+            cols="60"
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">Enviar Pedido</button>
+        </form>
       </section>
     </main>
 
