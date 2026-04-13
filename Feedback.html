@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ResetStyle.css" />
+    <link rel="stylesheet" href="FeedBackStyle.css" />
+    <title>Feedback</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="logo">
+          <p>Dev Burguer</p>
+          <p>O código mais saboroso da cidade</p>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Feedback</h1>
+      <form action="processa_feedback.php" method="get">
+        <!-- Dados do Cliente -->
+        <section id="dados-cliente"></div>
+        <h2>Dados do Cliente</h2>
+        <div class="campo">
+          <label for="nomeCompletoCliente">Nome Completo:</label>
+          <input
+            type="text"
+            id="nomeCompletoCliente"
+            name="nomeCompleto"
+            placeholder="Ex: João Silva dos Santos"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label for="emailCliente">E-mail:</label>
+          <input
+            type="email"
+            id="emailCliente"
+            name="email"
+            placeholder="Ex: exemplo@email.com"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label for="telefoneCliente">WhatsApp de Contato:</label>
+          <input
+            type="tel"
+            id="telefoneCliente"
+            name="telefone"
+            placeholder="(99) 99999-9999"
+            pattern="\(\d{2}\)\s*\d{5}-\d{4}"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label for="dataVisita">Data da Visita:</label>
+          <input type="date" id="dataVisita" name="dataVisita" required />
+        </div>
+
+        <div class="campo">
+          <strong>Gênero:</strong>
+          <input type="radio" name="genero" id="masculino" value="masculino" />
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" name="genero" id="feminino" value="feminino" />
+          <label for="feminino">Feminino</label>
+
+          <input type="radio" name="genero" id="outro" value="outro" />
+          <label for="outro">Outro</label>
+
+          <input
+            type="radio"
+            name="genero"
+            id="prefiroNaoInformar"
+            value="naoInformar"
+          />
+          <label for="prefiroNaoInformar">Prefiro não informar</label>
+        </div>
+        </section>
+
+        <!-- Avaliação da Experiência -->
+        <section id="avaliacao-experiencia">
+            <h2>Avaliação da Experiência</h2>
+            <div class="campo">
+                <label for="itemConsumido"><strong>Item Consumido:</strong></label>
+                <select name="itemConsumido" id="itemConsumido">
+                    <option value="hamburgaoC++">Hamburgão em C++</option>
+                    <option value="classBurguer">Class Burger</option>
+                    <option value="reactVeggie">React Veggie</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label for="nota"
+                ><strong>Nota para o Atendimento (1 a 10):</strong></label
+                >
+                <input
+                type="number"
+                name="nota"
+                id="nota"
+                min="1"
+                max="10"
+                required
+                />
+            </div>
+        </section>
+
+        <!-- Preferências -->
+        <section id="preferencias-comentarios">
+
+            <h2>Preferências e Comentários</h2>
+            <div class="campo">
+                <p>O que você mais gostou?</p>
+                <input type="checkbox" name="preferencia" id="sabor" value="sabor" />
+                <label for="sabor">Sabor do Hambúrguer</label>
+                
+                <input type="checkbox" name="preferencia" id="tempo" value="tempo" />
+                <label for="tempo">Tempo de Entrega</label>
+                
+                <input
+                type="checkbox"
+                name="preferencia"
+                id="ambiente"
+                value="ambiente"
+                />
+                <label for="ambiente">Ambiente do Food Truck</label>
+            </div>
+            
+            <div class="campo">
+                <label for="sugestao">Deixe sua sugestão:</label> <br>
+                <textarea
+                name="sugestao"
+                id="sugestao"
+                rows="10"
+                cols="60"
+                ></textarea>
+            </div>
+        </section>
+            
+        <!-- Botões -->
+        <div class="acoes">
+          <button type="submit">Enviar Feedback</button>
+          <button type="reset">Limpar Formulário</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

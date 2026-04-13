@@ -1,0 +1,65 @@
+body {
+  background: #f5deb32a;
+  color: rgb(44, 39, 30);
+  font-family: "Times New Roman", Times, serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(44, 39, 30);
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+main {
+  margin: 4rem 20% 4rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  padding-bottom: 1rem;
+  font-size: 24px;
+}
+
+form {
+  color: rgb(71, 51, 13);
+}
+
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.campo {
+  padding-bottom: 0.5rem;
+}
+
+.acoes button {
+  margin-right: 3rem;
+  width: 25%;
+  height: 55px;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(44, 39, 30);
+  cursor: pointer;
+  align-items: center;
+  background: rgba(223, 188, 123, 0.658);
+  border: 0.5px solid rgba(44, 39, 30, 0.315);
+}
