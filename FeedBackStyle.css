@@ -4,23 +4,6 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: rgb(44, 39, 30);
-  padding: 20px;
-  backdrop-filter: blur(6px);
-  position: sticky;
-  top: 0;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-}
-
-#logo {
-  font-size: 1.5rem;
-  font-style: italic;
-}
-
 main {
   margin: 4rem 20% 4rem;
 }
@@ -43,6 +26,23 @@ form {
 section {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(44, 39, 30);
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .campo {
